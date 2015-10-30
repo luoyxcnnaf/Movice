@@ -7,6 +7,7 @@
 #include "MoviceDlg.h"
 #include "afxdialogex.h"
 #include "Cdmsoft.h"
+#include "../Movice/logs/netIOlog.h"
 
 
 #ifdef _DEBUG
@@ -183,6 +184,7 @@ HCURSOR CMoviceDlg::OnQueryDragIcon()
 void CMoviceDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	sprintf(_dbgtemp, "初始化大漠插件"); writeLog(_dbgtemp, true);
 	CString strFilePath;
 	char strBuff[256];
 	Cdmsoft dm;
