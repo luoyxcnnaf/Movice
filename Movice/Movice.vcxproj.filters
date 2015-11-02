@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="logs">
+      <UniqueIdentifier>{cd3d5d0c-d827-4e87-9ad5-e5dc53390b84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -42,6 +45,9 @@
     <ClInclude Include="TabLogs.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="logs\netIOlog.h">
+      <Filter>logs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Movice.cpp">
@@ -58,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="TabLogs.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="logs\netIOlog.cpp">
+      <Filter>logs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
