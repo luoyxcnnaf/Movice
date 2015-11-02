@@ -42,4 +42,5 @@ public:
 	afx_msg void OnBnClickedOk();
 	CTabCtrl m_Tab;
 	afx_msg void OnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult);
+	int AddMsgToLogs(CString str);
 };

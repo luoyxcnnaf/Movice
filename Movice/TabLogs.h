@@ -1,4 +1,5 @@
 #pragma once
+#include "afxwin.h"
 
 
 // CTabLogs 对话框
@@ -20,4 +21,11 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 	DECLARE_MESSAGE_MAP()
+public:
+	virtual BOOL OnInitDialog();
+	CListBox m_LogsList;
+	int AddLogToList(CString s);
+	afx_msg void OnBnClickedButton1();
+protected:
+	
 };
