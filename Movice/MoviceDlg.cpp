@@ -8,6 +8,7 @@
 #include "afxdialogex.h"
 #include "Cdmsoft.h"
 #include "../Movice/logs/netIOlog.h"
+#include "TabLogs.h"
 
 
 #ifdef _DEBUG
@@ -185,6 +186,18 @@ void CMoviceDlg::OnBnClickedOk()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	sprintf(_dbgtemp, "初始化大漠插件"); writeLog(_dbgtemp, true);
+	//CTabLogs dlgA;
+	
+	//dlgA->m_LogListBox.AddString("aaaaa");
+	//dlgA->m_logEdit.SetWindowText(_T("vvvvvvvvvvvv"));
+	//m_LogListBox.AddString("aaaaa");
+	//dlgA->m_LogListBox.AddString("22222222222");
+	//dlgA.GetDlgItem(IDC_LIST1)->AddString("aaaaaaas");
+	//CTabLogs *pDlg = (CTabLogs *)(GetParent()->GetParent());
+	//pDlg->AddLogToList("sssssssssssssss");
+	//pDlg->函数或变量;
+
+
 	CString strFilePath;
 	char strBuff[256];
 	Cdmsoft dm;
@@ -212,4 +225,11 @@ void CMoviceDlg::OnSelchangeTab1(NMHDR *pNMHDR, LRESULT *pResult)
 		m_TabLogs.ShowWindow(SW_HIDE);
 	}
 	*pResult = 0;
+}
+
+
+int CMoviceDlg::AddMsgToLogs(CString str)
+{
+	m_TabLogs.AddLogToList("vvcc111");
+	return 0;
 }
